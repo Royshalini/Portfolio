@@ -1,7 +1,7 @@
 [
     {
       "title": "Amazon Clone",
-      "imageSrc": "assets/projects/project.png",
+      "imageSrc": "/assets/projects/project.png",
       "description": "Amazon clone website is made using HTML and CSS",
       "skills": ["HTML5", "CSS"],
       "demo": "https://royshalz.github.io/Amazon-clone/",
