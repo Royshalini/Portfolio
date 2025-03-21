@@ -1,0 +1,26 @@
+[
+    {
+      "title": "Amazon Clone",
+      "imageSrc": "projects/project.png",
+      "description": "Amazon clone website is made using HTML and CSS",
+      "skills": ["HTML5", "CSS"],
+      "demo": "https://royshalz.github.io/Amazon-clone/",
+      "source": "https://github.com/royshalz"
+    },
+    {
+      "title": "Art Website",
+      "imageSrc": "projects/project.png",
+      "description": "This is a project made to learn the latest languages by building an app.",
+      "skills": ["HTML5", "CSS", "Bootstrap"],
+      "demo": "https://royshalz.github.io/bootP1/",
+      "source": "https://github.com/royshalz"
+    },
+    {
+      "title": "Text Utils",
+      "imageSrc": "projects/project.png",
+      "description": "TextUtils is a simple and efficient text manipulation tool designed to perform various operations on textual data.",
+      "skills": ["HTML5", "CSS", "JS","React"],
+      "demo": "https://www.example.com",
+      "source": "https://github.com/royshalz"
+    }
+  ]
