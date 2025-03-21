@@ -4,7 +4,7 @@ import { getImageUrl } from "../../utils";
 
 export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState("home"); 
+  const [activeSection, setActiveSection] = useState("home");
   const [scrolled, setScrolled] = useState(false);
   const [isClickingNav, setIsClickingNav] = useState(false);
 
@@ -28,7 +28,7 @@ export const Navbar = () => {
 
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
-      let currentSection = "home"; 
+      let currentSection = "home";
 
       const sections = document.querySelectorAll("section");
       const scrollY = window.scrollY;
@@ -36,7 +36,7 @@ export const Navbar = () => {
       const pageHeight = document.documentElement.scrollHeight;
 
       sections.forEach((section) => {
-        const sectionTop = section.offsetTop - 250; 
+        const sectionTop = section.offsetTop - 250;
         const sectionHeight = section.clientHeight;
 
         if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
@@ -45,7 +45,7 @@ export const Navbar = () => {
       });
 
       if (scrollY === 0) {
-        currentSection = "home"; 
+        currentSection = "home";
       }
 
       if (scrollY + windowHeight >= pageHeight - 10) {
@@ -63,9 +63,10 @@ export const Navbar = () => {
 
   return (
     <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ""}`}>
-      <a className={styles.title} href="/" onClick={() => handleNavClick("home")}>
+      <a className={styles.title} href="#" onClick={(e) => e.preventDefault()}>
         Portfolio
       </a>
+
       <div className={styles.menu}>
         <img
           className={styles.menuBtn}
@@ -81,20 +82,22 @@ export const Navbar = () => {
           className={`${styles.menuItems} ${menuOpen && styles.menuOpen}`}
           onClick={() => setMenuOpen(false)}
         >
-          {["home", "about", "experience", "projects", "contact"].map((section) => (
-            <li key={section}>
-              <a
-                href={`#${section}`}
-                className={activeSection === section ? styles.activeLink : ""}
-                onClick={(e) => {
-                  e.preventDefault();
-                  handleNavClick(section);
-                }}
-              >
-                {section.charAt(0).toUpperCase() + section.slice(1)}
-              </a>
-            </li>
-          ))}
+          {["home", "about", "experience", "projects", "contact"].map(
+            (section) => (
+              <li key={section}>
+                <a
+                  href={`#${section}`}
+                  className={activeSection === section ? styles.activeLink : ""}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleNavClick(section);
+                  }}
+                >
+                  {section.charAt(0).toUpperCase() + section.slice(1)}
+                </a>
+              </li>
+            )
+          )}
         </ul>
       </div>
     </nav>
