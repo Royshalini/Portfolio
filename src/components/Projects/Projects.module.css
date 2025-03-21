@@ -8,7 +8,7 @@
 }
 
 .title {
-  font-size: 30px;
+  font-size: 32px;
   font-weight: 700;
   letter-spacing: 1.75px;
   text-transform: uppercase;
@@ -21,22 +21,21 @@
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
-  gap: 30px; /* Increased gap between cards */
+  gap: 30px; 
   width: 100%;
-  overflow-x: hidden; /* Hides horizontal scrollbar */
+  overflow-x: hidden; 
   
 }
 
 .container {
-  margin-bottom: 300px; /* Adjust this value if needed */
+  margin-bottom: 300px; 
 }
 
 
-/* Responsive Fix for Small Screens */
 @media screen and (max-width: 1024px) {
   .projects {
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px; /* Adjusted gap for smaller screens */
+    gap: 20px; 
   }
 }
