@@ -36,6 +36,6 @@
   .projects {
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px; 
+    gap: 28px; 
   }
 }

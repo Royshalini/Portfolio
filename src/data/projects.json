@@ -1,26 +1,28 @@
 [
     {
       "title": "Amazon Clone",
-      "imageSrc": "/assets/projects/project.png",
+      "imageSrc": "/assets/projects/AmazonClone.png",
       "description": "Amazon clone website is made using HTML and CSS",
       "skills": ["HTML5", "CSS"],
-      "demo": "https://royshalz.github.io/Amazon-clone/",
-      "source": "https://github.com/royshalz"
+      "demo": "https://royshalini.github.io/AmazonClone/",
+      "source": "https://github.com/Royshalini"
     },
+
+    {
+      "title": "Booklist Management",
+      "imageSrc": "/assets/projects/BooklistManagement.png",
+      "description": "The BookList Management Form is a React-based web application that allows users to manage a collection of books.",
+      "skills": ["HTML5", "CSS", "JS","React"],
+      "demo": "https://royshalini.github.io/fitness_club_bullseye/",
+      "source": "https://github.com/Royshalini"
+    },
+
     {
       "title": "Art Website",
-      "imageSrc": "/assets/projects/project.png",
+      "imageSrc": "/assets/projects/ArtWebsite.png",
       "description": "This is a project made to learn the latest languages by building an app.",
       "skills": ["HTML5", "CSS", "Bootstrap"],
-      "demo": "https://royshalz.github.io/bootP1/",
-      "source": "https://github.com/royshalz"
-    },
-    {
-      "title": "Text Utils",
-      "imageSrc": "/assets/projects/project.png",
-      "description": "TextUtils is a simple and efficient text manipulation tool designed to perform various operations on textual data.",
-      "skills": ["HTML5", "CSS", "JS","React"],
-      "demo": "https://www.example.com",
-      "source": "https://github.com/royshalz"
+      "demo": "https://royshalini.github.io/ArtWebsite/",
+      "source": "https://github.com/Royshalini"
     }
   ]
