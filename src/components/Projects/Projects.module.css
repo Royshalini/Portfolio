@@ -1,0 +1,41 @@
+@import "../../vars.css";
+
+.container {
+  margin-top: 76px;
+  color: var(--color-text);
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 1.75px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.projects {
+  margin-top: 37px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 30px; 
+  width: 100%;
+  overflow-x: hidden; 
+  
+}
+
+.container {
+  margin-bottom: 300px; 
+}
+
+
+@media screen and (max-width: 1024px) {
+  .projects {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 28px; 
+  }
+}

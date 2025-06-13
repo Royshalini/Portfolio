@@ -1,0 +1,28 @@
+[
+    {
+      "title": "Amazon Clone",
+      "imageSrc": "/assets/projects/AmazonClone.png",
+      "description": "Amazon clone website is made using HTML and CSS",
+      "skills": ["HTML5", "CSS"],
+      "demo": "https://royshalini.github.io/AmazonClone/",
+      "source": "https://github.com/Royshalini"
+    },
+
+    {
+      "title": "Booklist Management",
+      "imageSrc": "/assets/projects/BooklistManagement.png",
+      "description": "The BookList Management Form is a React-based web application that allows users to manage a collection of books.",
+      "skills": ["HTML5", "CSS", "JS","React"],
+      "demo": "https://royshalini.github.io/fitness_club_bullseye/",
+      "source": "https://github.com/Royshalini"
+    },
+
+    {
+      "title": "Art Website",
+      "imageSrc": "/assets/projects/ArtWebsite.png",
+      "description": "This is a project made to learn the latest languages by building an app.",
+      "skills": ["HTML5", "CSS", "Bootstrap"],
+      "demo": "https://royshalini.github.io/ArtWebsite/",
+      "source": "https://github.com/Royshalini"
+    }
+  ]

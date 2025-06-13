@@ -1,0 +1,114 @@
+@import "../../vars.css";
+
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 100px; /* Ensures it doesn't overlap the navbar */
+  z-index: 1;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: var(--color-text);
+  z-index: 1;
+}
+
+.smallText {
+  font-size: 49px;
+  font-weight: 600;
+}
+
+.title {
+  font-size: 65px;
+  font-weight: 600;
+  margin-bottom: 33px;
+  font-family: var(--font-roboto);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 70%,
+    rgba(255, 255, 255, 0) 120%
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 20px;
+}
+
+.contactBtn,
+.resumeBtn {
+  text-decoration: none;
+  background: linear-gradient(90deg, #003F88 0%, #00AEEF 100%);
+  color: var(--color-text);
+  border-radius: 100px;
+  font-size: 30px;
+  font-weight: 600;
+  padding: 17px 26px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+  transition: 0.3s ease-in-out;
+}
+
+.contactBtn:hover,
+.resumeBtn:hover {
+  box-shadow: 0 0 12px #00AEEF;
+  transform: scale(1.05);
+}
+
+.heroImg {
+  width: 37%; 
+  z-index: 1;
+  border-radius: 50%;
+  box-shadow: 0 0 20px 6px rgba(0, 174, 239, 0.5);
+  transform: none;
+}
+
+.topBlur {
+  position: absolute;
+  width: 50vw;
+  height: 50vw;
+  min-width: 350px;
+  top: -128px;
+  left: -10vw;
+  border-radius: 764px;
+  background: rgba(25, 55, 109, 0.7);
+  filter: blur(100px);
+  z-index: 0;
+}
+
+.bottomBlur {
+  position: absolute;
+  width: 70vw;
+  height: 50vw;
+  min-width: 350px;
+  top: 246px;
+  right: -25vw;
+  border-radius: 764px;
+  background: rgba(25, 55, 109, 0.7);
+  filter: blur(100px);
+  z-index: 0;
+}
+
+@media screen and (max-width: 830px) {
+  .container {
+    flex-direction: column-reverse;
+    margin-top: 80px; 
+  }
+
+  .heroImg {
+    width: 100%; 
+    max-width: 250px;
+  }
+
+  .content {
+    align-items: center;
+    text-align: center;
+  }
+}

@@ -1,0 +1,60 @@
+@import "../../vars.css";
+
+.container {
+  position: relative;
+  background-color: rgba(12, 12, 12, 0.6);
+  border-radius: 14px;
+  padding: 73px;
+  margin-top: 130px;
+  z-index: 1;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.title {
+  color: var(--color-text);
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 1.75px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.singleCard {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: rgba(165, 215, 232, 0.2); 
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+  transition: 0.4s;
+}
+
+.singleCard:hover {
+  box-shadow: 0px 8px 20px rgba(165, 215, 232, 0.5);
+}
+
+.aboutText {
+  flex: 1;
+  font-size: 17px;
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+@media screen and (max-width: 830px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .singleCard {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+  }
+
+  
+}
